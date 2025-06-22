@@ -1,0 +1,430 @@
+*{
+    font-family: 'Gowun Batang';
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.section1{
+    background-image: url("./images/drew-coffman-1872.jpg");
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-position:center;
+    background-size: cover; 
+    overflow-x: hidden;
+    overflow-y: hidden;
+    min-height: 100vh;
+}
+
+/* General header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+header.scrolled {
+  background-color: rgb(119, 96, 66);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header img {
+  width: 13rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: rgb(253, 234, 182);
+}
+
+.menu-icons {
+  display: none;
+}
+
+.menu-icons i {
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li a {
+    color: #000;
+    padding: 10px 0;
+    font-size: 20px;
+  }
+
+  .menu-icons {
+    display: block;
+  }
+
+  #menu-close {
+    display: none;
+  }
+
+  .menu-opened #menu-open {
+    display: none;
+  }
+
+  .menu-opened #menu-close {
+    display: inline-block;
+  }
+}
+
+
+
+.contaner1{
+    margin-top: 250px;
+    color: white;
+    text-align: center;
+    
+}
+
+.contaner1 .welc{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.contaner1 .fam{
+    font-size: 70px;
+    font-weight: 700;
+    margin: 8px;
+    padding: 0;
+}
+
+.contaner1 .we{
+    font-size: 25px;
+    padding: 0;
+    margin-bottom: 30px;  
+}
+
+.learn{
+    width: 130px;
+    height: 60px;
+    border-radius: 10px;
+    border:none;
+    color: white;
+    background-color:rgb(119, 96, 66);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.learn:hover{
+    background-color: aliceblue;
+    color: #000000;
+}
+
+.contact{
+    width: 130px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid white ;
+    color: white;
+    background-color: transparent;
+    font-size: 15px;   
+    font-weight: 700;
+}
+
+.contact:hover{
+    background-color: white;
+    color: #000000;
+}
+
+.section2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 50px;
+    margin-top: 30px;
+}
+
+
+.img2{
+    width: 560px;
+}
+
+.contaner2{
+    padding: 50px;
+    padding: 20px;
+}
+
+.who{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+p img{
+    position: relative;
+    top: 13px;
+    width: 40px;
+    border: .5px solid silver;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+
+.section3{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:whitesmoke;
+    
+    padding: 80px 0px 80px 0px;
+    margin: 0;
+}
+
+.section3 img{
+    width: 48%;
+    margin-right: 50px;
+}
+
+.contaner3{
+    width: 50%;
+    margin: 40px;
+    padding-top: 20px;
+}
+
+.text{
+    font-size: 16px;
+    line-height: 30px;
+    color:rgba(0, 0, 0, .7);
+}
+
+.section4{
+    text-align: center;
+    min-height: 90vh;
+    padding: 30px 0px;
+    margin-bottom: 100px;
+}
+
+.section4 .text{
+    color:rgba(0, 0, 0, .5);
+}
+
+.contaner4{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box img{
+    width: 100%;
+}
+
+.box {
+    width:30%;
+    padding: 30px;
+}
+
+.section5{
+    min-height:80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 80px 40px 0px 40px;
+    color: rgba(0, 0, 0, .8);
+}
+
+.section5 p img{
+    position: relative;
+    top: 10px;
+    width: 35px;
+    border: .5px solid silver;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-color:rgb(126, 112, 85);
+}
+
+.contaner5 {
+    width: 50%;
+    margin-right: 90px;
+}
+
+.section6{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color:rgb(68, 63, 54);
+    text-align: left;
+}
+
+.column1{
+    width: 30%;
+    padding: 0 10px;
+}
+
+.column1 .head{
+    color: #ffffff;
+    padding: 8px 0;
+}
+hr{
+    color: rgb(38, 37, 37);
+}
+
+.column1 .text2{
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+    padding: 2px 0px;
+}
+
+.text2 img{
+    position: relative;
+    top: 5px;
+    width: 20px;
+    border: none;
+    margin-right: 2px;
+}
+
+.text2 .icon4{
+    top: 7px;
+    width: 30px;
+}
+
+.col4{
+    align-items: center;
+    background-image: url('./images/contact-details-map.png') ;
+    background-position: center;
+    background-size: 70% 55%;
+    background-repeat: no-repeat;    
+}
+
+@media (max-width:768px){
+    .section2{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .section3{
+        flex-direction: column;
+        padding: 0;
+    }
+    .section3 img{
+        width: 100%;
+        margin: 0;
+    }
+    .contaner3{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contaner4{
+        flex-direction: column;
+    }
+
+    .contaner4 .box{
+        width: 100%;
+    }
+
+    .section5{
+        flex-direction: column;
+        padding: 10px 20px 30px 20px;
+        
+    }
+
+    .contaner5 {
+        width: 100%;
+        padding: 0;  
+        margin: 0 30px;
+    }
+
+    .section6{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .column1{
+        width: 100%;
+    }
+
+}
+
+footer{
+    text-align: center;
+    align-items: center;
+    background-color: rgb(51, 48, 41);
+    padding: 30px;
+}
+
+footer img{
+    width: 300px;
+    color: gray;
+    padding: 20px;
+}
+
+footer p{
+    color:  rgba(255, 255, 255, 0.5);
+}
+
+.icons img{
+    width: 40px;
+    border: 1px solid silver;
+    border-radius: 50%;
+    margin: 1px;
+    padding: 1px;
+    background-color: rgb(68, 63, 54);
+}
+
+.facebook:hover{
+    background-color: rgb(61, 61, 158);
+}
+
+.google:hover{
+    background-color: rgb(158, 56, 56);
+}
+
+.twitter:hover{
+    background-color: rgb(71, 142, 223);
+}
+
+.linkedin:hover{
+    background-color: rgb(71, 142, 223);
+}
+
