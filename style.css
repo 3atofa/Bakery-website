@@ -1,16 +1,16 @@
-*{
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
     font-family: 'Gowun Batang';
 }
 
-html{
-    overflow-x: hidden;
-}
 
 body{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    
+    width: 100%;
 }
 
 .section1{
@@ -32,6 +32,7 @@ header {
   padding: 1rem 2rem;
   position: fixed;
   top: 0;
+  z-index: 1000;
   width: 100%;
   background: transparent;
   transition: background-color 0.3s ease;
@@ -188,7 +189,7 @@ nav ul li a:hover {
 
 
 .img2{
-    width: 560px;
+    max-width: 560px;
 }
 
 .contaner2{
@@ -256,7 +257,7 @@ p img{
 }
 
 .box img{
-    width: 100%;
+    max-width: 100%;
 }
 
 .box {
@@ -294,7 +295,7 @@ p img{
     justify-content: center;
     align-items: center;
     padding: 20px;
-    max-width: 100vw;
+    max-width: 100%;
     background-color:rgb(68, 63, 54);
     text-align: left;
 }
@@ -339,62 +340,159 @@ hr{
     background-repeat: no-repeat;    
 }
 
-@media (max-width:768px){
-    .section2{
-        flex-direction: column-reverse;
-        padding: 0;
-    }
 
-    .section3{
-        flex-direction: column;
-        padding: 0;
-    }
-    .section3 img{
-        width: 100%;
-        margin: 0;
-    }
-    .contaner3{
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
-    .contaner4{
-        flex-direction: column;
-    }
-
-    .contaner4 .box{
-        width: 100%;
-    }
-
-    .section5{
-        flex-direction: column;
-        padding: 10px 20px 30px 20px;
-        
-    }
-
-    .contaner5 {
-        width: 100%;
-        padding: 0;  
-        margin: 0 30px;
-    }
-
-    .section6{
-        flex-direction: column;
-        width: 100%;
-        margin: 0;
-    }
-
-    .column1{
-        width: 100%;
-    }
-
+iframe{
+    width: 500px;
+    height: 500px;
 }
+
+@media (max-width: 768px) {
+  * {
+    max-width: 100%;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 1rem 0;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li a {
+    color: #000;
+    padding: 10px 0;
+    font-size: 20px;
+  }
+
+  .menu-icons {
+    display: block;
+  }
+
+  #menu-close {
+    display: none;
+  }
+
+  .menu-opened #menu-open {
+    display: none;
+  }
+
+  .menu-opened #menu-close {
+    display: inline-block;
+  }
+
+  .section1 {
+    padding: 0 10px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .contaner1 {
+    margin-top: 180px;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  .contaner1 .fam {
+    font-size: 38px;
+    word-wrap: break-word;
+  }
+
+  .contaner1 .we {
+    font-size: 18px;
+  }
+
+  .learn,
+  .contact {
+    width: 100%;
+    max-width: 260px;
+    margin: 10px auto;
+  }
+
+  .section2,
+  .section3,
+  .section4,
+  .section5,
+  .section6 {
+    flex-direction: column;
+    padding: 20px 10px;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  .section2 {
+    text-align: center;
+  }
+
+  .img2,
+  .section3 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contaner2,
+  .contaner3,
+  .contaner4,
+  .contaner5,
+  .column1,
+  .box {
+    width: 100% !important;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .contaner4 {
+    flex-direction: column;
+  }
+
+  .section4 {
+    padding: 30px 10px;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: 300px;
+    display: block;
+  }
+
+  footer {
+    padding: 20px 10px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  footer img {
+    width: 180px;
+  }
+
+  .icons img {
+    width: 35px;
+    margin: 5px;
+  }
+}
+
+
+
 
 footer{
     text-align: center;
     background-color: rgb(51, 48, 41);
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -435,4 +533,3 @@ footer p{
 .linkedin:hover{
     background-color: rgb(71, 142, 223);
 }
-
